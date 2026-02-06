@@ -1,3 +1,4 @@
+-- scalar function :---this function are applied the every rows and result will be given for each rows
 -- 01. UPPER()::=>>Converts all characters of a string to uppercase
 
 select upper('gate cs');
