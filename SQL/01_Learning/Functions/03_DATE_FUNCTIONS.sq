@@ -1,1 +1,65 @@
+-- Date functions are used to manipulate and extract date or time values.
+-- 01.now()::==> this function are print the time and date both
+             select now();
+   -- 01.01.::=>> curdate()/date(now())::=>> show the current date 
+               select curdate(),date(now());
+   -- 01.02.::=>> curtime()/::=>> show the current time
+               select curtime(),time(now());
+               
+-- 02. extract the time and date
+   -- 02.01.in dates::=> 
+           -- extract days
+           select day(now());
+           -- extract weeks
+           select week(now());
+           -- extract month 
+           select month(now());
+           -- extrack quarter 
+           select quarter(now());
+           -- extract year
+           select year(now());
+	-- 02.02. In times::=>>
+       -- extract second
+       select second(now());
+       -- extract minutes
+       select minute(now());
+       -- extract hour
+       select hour(now());
+       
+-- 03. adddate()::=>>
+     -- month increase
+           select adddate(now(),interval 2 month);
+     -- week increase
+		   select adddate(now(),interval 2 week);
+	 -- year increase
+            select adddate(now(),interval 2 year);
+     -- quater increase
+           select adddate(now(),interval 2 quarter);
+	 -- second increase
+            select adddate(now(),interval 25 second);
+	 -- minutes increase 
+            select adddate(now(), interval 9 minute);
+	 -- hour increase
+             select adddate(now(), interval 10 hour);
+		
+	 -- 
+-- 04. subdate()::=>>
+      -- month decrease
+           select subdate(now(),interval 2 month);
+	 
+     -- week decrease
+		   select subdate(now(),interval 2 week);
+	 -- year decrease
+            select subdate(now(),interval 2 year);
+     -- quater decrease
+           select subdate(now(),interval 2 quarter);
+	 -- second decrease
+            select subdate(now(),interval 25 second);
+	 -- minutes decrease 
+            select subdate(now(), interval 9 minute);
+	 -- hour decrease
+             select subdate(now(), interval 10 hour);
+             
 
+
+    
