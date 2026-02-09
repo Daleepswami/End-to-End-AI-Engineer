@@ -1,4 +1,11 @@
 -- DISTINCT ::==>> DISTINCT removes duplicate rows from the result set.
+-- 01 distinct
+select distinct amount from payment;
+select distinct customer_id ,amount from payment;
+
+-- we are not use the column before the distinct function
+-- combination of two columns use (like:-->> ( dictinct column01, column02) ) posible
+-- combination of two columns use (like:-->> ( column01 dictinct  column02) ) not posible
 
 -- 01.Single column se unique values
 SELECT DISTINCT city FROM students;
