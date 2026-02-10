@@ -1,7 +1,11 @@
-use sakila;
--- group by ::-  group by is a statement use to group similar value
-                -- group will be created according for unique value
-                -- we are not use column in select this not applied group by 
+use sakila; 
+-- GROUP BY :-
+-- GROUP BY clause is used to group rows that have the same values in a column.
+-- It is mostly used with aggregate functions like COUNT, SUM, AVG, MIN, MAX.
+-- One group is created for each unique value in the GROUP BY column.
+-- Columns used in SELECT must either be in GROUP BY or inside an aggregate function.
+-- GROUP BY works after WHERE clause and before HAVING clause.
+
                 
 select customer_id, sum(amount) from payment group by customer_id;
 
