@@ -1,7 +1,7 @@
 HAVING::->> 
   -- Having clause which use to filter the based on aggragate function
   -- Having clause are always use with group by statements
-  -- Havig clause are use after the gru=oup by statement
+  -- Havig clause are use after the group by statement
 
 -- Q.01  Show the departments that have more than 5 employees.
   SELECT dept, COUNT(*) AS total_employees FROM employees GROUP BY dept HAVING COUNT(*) > 5;
