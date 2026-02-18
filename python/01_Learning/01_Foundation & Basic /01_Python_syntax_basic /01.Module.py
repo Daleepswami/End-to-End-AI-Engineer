@@ -1,7 +1,7 @@
 Python Module::=>> 
     A Python module is a .py file containing reusable code like functions, classes, and variables.
     It organizes code, avoids repetition, and keeps programs modular. 
-    Use built-in modules (math, random), create custom ones, or install third-party via pip.
+    Use built-in modules (math, random), create custom ones
 module Types:
     Built-in: import math
     User-defined: Create your own file
