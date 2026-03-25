@@ -1,9 +1,9 @@
- -- constraint :-- constraint are the set of rules that are applied on the table column 
+   -- constraints :-- constraint are the set of rules that are applied on the table column 
 				   --  to avoid invaild data entry 
                    -- to ensure data integrity
   
   
--- 01. not null::--  : Ensures that a column cannot store NULL values.
+  -- 01. not null::--  : Ensures that a column cannot store NULL values.
                       -- This is essential for fields that must always contain information
   
   create table test1000(salary int not null,age int);
@@ -57,3 +57,15 @@ insert into ord values(100,1,1999),(101,2,2000),(102,1,2001);
 insert into ord values(102,5,2001);
 select * from ord;
 
+drop table test101;
+create table ord(id int ,cid int ,price int, foreign key(cid) references cust(id) on delete set null );
+insert into ord values(100,1,1999),(101,2,2000),(102,1,2001);
+insert into ord values(102,5,2001);
+select * from ord;       
+
+
+drop table test101;
+create table ord(id int ,cid int ,price int, foreign key(cid) references cust(id) on update set null );
+insert into ord values(100,1,1999),(101,2,2000),(102,1,2001);
+insert into ord values(102,5,2001);
+select * from ord;         
