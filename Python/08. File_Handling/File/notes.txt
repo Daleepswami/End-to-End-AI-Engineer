@@ -1,0 +1,2 @@
+Python file handling
+The with statement closes the file automatically
