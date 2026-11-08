@@ -1,0 +1,4 @@
+NEWginal line 1
+Original line 2
+NEW LINE ADDED at end!
+Added at the end
